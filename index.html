@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Nombre</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/alertify.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/body.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Nombre</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Inicio</a></li>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#contact">Contacto</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="js-top-login"><a href="#loginform">Iniciar sesi&oacute;n</a></li>
+            <li class="hidden js-top-logout">
+              <a href="#loginform" class="js-logout-btn">
+                <span class="glyphicon glyphicon-off"></span>
+                Cerrar sesi&oacute;n
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main container">
+      <section class="p-l-s p-r-s jumbotron">
+        <h1>Nombre</h1>
+          <p>Descripcion de la p&aacute;gina. Puede extenderse varias frases.</p>
+          <p>Puede ser m&aacute;s de un p&aacute;rrafo.</p>
+          <p>
+            <a class="btn btn-lg btn-primary" href="#" role="button">Ejemplo de bot&oacute;n &raquo;</a>
+          </p>
+      </section>
+      <section class="main__container flex">
+        <h1 class="hidden">Main content</h1>
+        <section class="col-md-9 main__container-section flex-column">
+          <h2>¿Qu&eacute; es Nombre?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </section>
+        <section id="loginform" class="col-md-3 main__container-section flex-column">
+          <h2 class="center">Acceder al sitio</h2>
+          <div class="loginform js-login-form">
+            <form class="js-login" action="#" method="post" role="form">
+              <div class="form-group">
+                <div class="input-group">
+                  <label for="usuario" class="sr-only">Tu usuario</label>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input type="text" id="usuario" name="usuario" class="form-control" value="" placeholder="Usuario">
+                </div>
+                <div class="input-group m-t-s">
+                  <label for="clave" class="sr-only">Tu clave</label>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                  <input type="password" id="clave" name="clave" class="form-control" value="" placeholder="Contrase&ntilde;a">
+                </div>
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-primary btn-block js-login-btn">
+                  <span class="glyphicon glyphicon-log-in"></span>
+                  Ingresar
+                </button>
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-success btn-block js-register-show">
+                  <span class="glyphicon glyphicon-user"></span>
+                  Registrarse
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="registerform hidden js-register-form">
+            <form class="form-horizontal" action="#" method="post" role="form">
+              <div class="form-group">
+                <label for="usuario" class="sr-only">Tu usuario</label>
+                <input type="text" id="usuario" name="usuario" class="form-control" value="" placeholder="Usuario">
+              </div>
+              <div class="form-group">
+                <label for="clave" class="sr-only">Tu clave</label>
+                <input type="password" id="clave" name="clave" class="form-control m-t-s" value="" placeholder="Contrase&ntilde;a">
+              </div>
+              <div class="form-group">
+                <label for="clave" class="sr-only">Tu nombre</label>
+                <input type="password" id="nombre" name="nombre" class="form-control m-t-s" value="" placeholder="Nombre">
+              </div>
+              <div class="form-group">
+                <label for="clave" class="sr-only">Tu email</label>
+                <input type="password" id="regmail" name="regmail" class="form-control m-t-s" value="" placeholder="Email">
+              </div>
+              <div class="m-t-s form-group">
+                <button type="button" class="btn btn-success btn-block js-register">
+                  <span class="glyphicon glyphicon-user"></span>
+                  Registrarse
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="js-user-side hidden">
+            Bienvenido, <span class="js-user-side-names">Nombre Apellido</span>
+            <a href="#loginform" class="js-logout-btn">
+              <span class="glyphicon glyphicon-off"></span>
+              Cerrar sesi&oacute;n
+            </a>
+          </div>
+        </section>
+      </section>
+      <section id="about" class="meet-us m-b-m gray-border-down">
+        <h2 class="m-b-s">Con Nombre puedes</h2>
+        <div class="m-b-s gray-border-down"></div>
+        <div class="row m-b-m m-t-m">
+          <div class="col-md-4">
+            <img class="circular" src="img/kitten.jpg" alt="" />
+            <h3>Accion 1</h3>
+            <p>
+              Nuestros servicios son ampliamente conocidos en el sector
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img class="circular" src="img/kitten.jpg" alt="" />
+            <h3>Accion 2</h3>
+            <p>
+              Nuestros clientes nos adoran! Todos estan contentos
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img class="circular" src="img/kitten.jpg" alt="" />
+            <h3>Accion 3</h3>
+            <p>
+              Tambien los proveedores, todos nos quieren
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="m-t-m m-b-s">
+        <h2>Cont&aacute;ctanos</h2>
+        <div class="row flex">
+          <div class="col-md-5 flex-column">
+            <img src="img/contact_us.jpg" alt="" />
+          </div>
+          <div class="col-md-7 flex-column">
+            <p>
+              Si tienes preguntas o quieres decirnos algo, usa el formulario de contacto
+            </p>
+            <form class="" action="#" method="post" role="form">
+              <div class="form-group">
+                <label for="email" class="sr-only">Tu email</label>
+                <input type="email" class="form-control" id="email" placeholder="Tu email">
+              </div>
+              <div class="form-group">
+                <label for="message" class="sr-only">Tu consulta o mensaje</label>
+                <textarea class="form-control" id="message" name="message" rows="8" placeholder="Tu consulta o mensaje"></textarea>
+              </div>
+              <button type="button" class="btn btn-primary btn-block js-contact-button">
+                <span class="glyphicon glyphicon-envelope"></span>
+                Enviar
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer p-l-s p-r-s p-t-s p-b-s">
+      &copy; 2016 Nombre
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/alertify.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
